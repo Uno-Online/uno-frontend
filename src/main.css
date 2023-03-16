@@ -1,0 +1,22 @@
+:root {
+  --uno-red-color: #d72600;
+  --uno-blue-color: #0956bf;
+  --uno-green-color: #379711;
+  --uno-yellow-color: #ecd407;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  color: #fff;
+}
+
+button {
+  color: inherit;
+}

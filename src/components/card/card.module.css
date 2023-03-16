@@ -1,0 +1,50 @@
+.card {
+  width: 116px;
+  height: 178px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: transform ease 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.card-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-content-red {
+  background-color: var(--uno-red-color);
+}
+
+.card-content-blue {
+  background-color: var(--uno-blue-color);
+}
+
+.card-circle {
+  width: 85px;
+  height: 150px;
+  border: solid 4px #fff;
+  border-radius: 50%;
+  align-self: center;
+  transform: rotate(208deg);
+  position: absolute;
+}
+
+.card-content-text {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000,
+    1px -1px 0 #000, 1px 0 0 #000, -1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000,
+    4px 4px 0 #000;
+}
