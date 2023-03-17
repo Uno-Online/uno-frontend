@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Game } from "../components/game/game";
+import { Home } from "../pages/home";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Game />,
+    element: <Home />,
   },
 ]);
