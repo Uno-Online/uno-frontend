@@ -102,6 +102,14 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/107494885?v=4" width="100px;" alt="Foto do Edu Nunes no GitHub" /><br>
+        <sub>
+          <b>Edu Nunes</b>
+        </sub>
+      </a>
+    </td>
   </tr>
 </table>
 
