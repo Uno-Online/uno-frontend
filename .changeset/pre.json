@@ -1,0 +1,8 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "@uno-online/uno-frontend": "0.0.1"
+  },
+  "changesets": []
+}

@@ -15,6 +15,12 @@ module.exports = {
   ],
   overrides: [
     {
+      files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      rules: {
+        "no-param-reassign": "warn",
+      },
+    },
+    {
       files: ["vite.config.ts"],
       rules: {
         "import/no-extraneous-dependencies": "off",

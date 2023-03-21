@@ -1,16 +1,19 @@
 {
-  "name": "uno",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@uno-online/uno-frontend",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint .",
-    "stylelint": "stylelint src/**/*.css"
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+    "stylelint": "stylelint src/**/*.css --fix",
+    "lint:ci": "eslint src --ext .js,.jsx,.ts,.tsx && stylelint src/**/*.css",
+    "release": "changeset publish"
   },
   "dependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.0",
     "@reduxjs/toolkit": "^1.9.3",
     "axios": "^1.3.4",
     "react": "^18.2.0",
@@ -37,5 +40,14 @@
     "stylelint-config-standard": "^30.0.1",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
+  },
+  "packageManager": "yarn@1.22.19",
+  "engines": {
+    "node": ">=18",
+    "yarn": ">=1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Uno-Online/uno-frontend"
   }
 }
