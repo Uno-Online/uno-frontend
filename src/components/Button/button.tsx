@@ -10,6 +10,7 @@ export function Button({
   onClick,
   children,
   "aria-label": ariaLabel,
+  ...rest
 }: ButtonProps) {
   return (
     <button
@@ -17,6 +18,7 @@ export function Button({
       onClick={onClick}
       aria-label={ariaLabel}
       className={classes.btn}
+      {...rest}
     >
       {children}
     </button>
