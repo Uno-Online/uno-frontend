@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Different package managers - version only yarn.lock
+package-lock.json
+pnpm-lock.yaml
