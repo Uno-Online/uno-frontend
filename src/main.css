@@ -5,6 +5,14 @@
   --uno-yellow-color: #ecd407;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
 html,
 body,
 #root {
@@ -13,10 +21,12 @@ body,
 
 body {
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   color: #fff;
 }
 
 button {
   color: inherit;
+  cursor: pointer;
 }

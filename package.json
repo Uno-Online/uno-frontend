@@ -11,12 +11,15 @@
     "stylelint": "stylelint src/**/*.css"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.0.0",
     "@reduxjs/toolkit": "^1.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.7",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.9.0",
-    "redux": "^4.2.1"
+    "redux": "^4.2.1",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
