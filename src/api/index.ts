@@ -13,14 +13,12 @@ export const get = async (path: string) => {
   return response.data;
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const post = async (path: string, payload: any) => {
+export const post = async <T>(path: string, payload: T) => {
   const response = await api.post(path, payload);
   return response.data;
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const put = async (path: string, payload: any) => {
+export const put = async <T>(path: string, payload: T) => {
   const response = await api.put(path, payload);
   return response.data;
 };
