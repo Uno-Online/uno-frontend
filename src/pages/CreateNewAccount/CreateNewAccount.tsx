@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 import * as zod from "zod";
@@ -42,10 +41,7 @@ export function CreateNewAccount() {
       <main className={styles["main-container"]}>
         <form
           className={styles["form-container"]}
-          onSubmit={handleSubmit((data) => {
-            // eslint-disable-next-line no-console
-            console.log(data);
-          })}
+          onSubmit={handleSubmit((data) => {})}
         >
           <fieldset className={styles["form-fieldset"]}>
             <legend className={styles["form-legend"]}>Crie Sua Conta</legend>

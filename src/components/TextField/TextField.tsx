@@ -2,18 +2,18 @@ import React from "react";
 import styles from "./TextField.module.css";
 
 export type TextFieldProps = {
-  error?: boolean | undefined;
-  helperText?: string | undefined;
-  id?: string | undefined;
-  label?: string | undefined;
+  error?: boolean;
+  helperText?: string;
+  id?: string;
+  label?: string;
   maxWidth?: React.CSSProperties["maxWidth"];
-  name?: string | undefined;
-  onBlur?: React.FocusEventHandler<HTMLInputElement> | undefined;
-  onChange?: React.ChangeEventHandler<HTMLInputElement> | undefined;
-  placeholder?: string | undefined;
-  required?: boolean | undefined;
-  requiredDecoration?: boolean | undefined;
-  value?: string | number | readonly string[] | undefined;
+  name?: string;
+  onBlur?: React.FocusEventHandler<HTMLInputElement>;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  placeholder?: string;
+  required?: boolean;
+  requiredDecoration?: boolean;
+  value?: string | number | readonly string[];
   width?: React.CSSProperties["width"];
 };
 
@@ -21,7 +21,7 @@ export function TextField({
   id = undefined,
   error = undefined,
   helperText = undefined,
-  label = "Label",
+  label = undefined,
   maxWidth = undefined,
   name = undefined,
   onBlur = undefined,
@@ -41,7 +41,7 @@ export function TextField({
       <span className={styles["text-field-label"]}>
         {label}
 
-        {(required === true || requiredDecoration === true) && (
+        {(required || requiredDecoration) && (
           <span className={styles["text-field-label-red"]}>{" *"}</span>
         )}
       </span>
@@ -58,7 +58,7 @@ export function TextField({
         value={value}
       />
 
-      {error === true && (
+      {error && (
         <span className={styles["text-field-helper-text"]}>{helperText}</span>
       )}
     </label>
