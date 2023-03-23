@@ -55,7 +55,7 @@
     width:28.75rem;
     height: 32rem;
     background-color: #fff;
-    padding:.5rem;
+    padding:1.1rem;
     z-index: 2;
     animation: fade-in 260ms ease-in;
     border-radius: 5px;
