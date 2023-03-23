@@ -4,5 +4,8 @@
   "initialVersions": {
     "@uno-online/uno-frontend": "0.0.1"
   },
-  "changesets": []
+  "changesets": [
+    "dirty-coins-beam",
+    "moody-llamas-flow"
+  ]
 }
