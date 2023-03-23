@@ -5,6 +5,7 @@ type PropsEmailValidate = {
     email: string,
 }
 
+
 export function EmailInput(props: PropsEmailValidate) {
     return (
         <>
