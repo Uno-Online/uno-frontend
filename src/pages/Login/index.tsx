@@ -13,11 +13,9 @@ import cloud3 from '../../assets/cloud/cloud_03.svg';
 import cloud4 from '../../assets/cloud/cloud_04.svg';
 import cloud5 from '../../assets/cloud/cloud_05.svg';
 import LoginFx from "./components/fx";
-import { Link, useNavigate } from "react-router-dom";
 
 
 export function Login(){
-    const navigate = useNavigate();
 
     const [loginOrGuest,setLoginOrGuest] = useState<'login' | 'guest'>('login')
     const clouds = [cloud1, cloud2, cloud3, cloud4, cloud5]
@@ -30,7 +28,6 @@ export function Login(){
             setPageLoaded(true);
         }
     }, [pageLoaded]);
-
 
     return(
         <main className={styles.container}>
