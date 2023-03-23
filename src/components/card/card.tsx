@@ -1,4 +1,4 @@
-import { CardColor } from "@/constants";
+import { CardColor } from "@/constants/index";
 import classes from "./card.module.css";
 
 export interface CardProps {

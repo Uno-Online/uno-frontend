@@ -1,4 +1,4 @@
-import { Card } from "@/components";
+import { Card } from "@/components/index";
 import classes from "./game.module.css";
 
 export function Game() {
