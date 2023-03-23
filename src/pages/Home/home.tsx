@@ -14,7 +14,7 @@ import cloud4 from '../../assets/cloud/cloud_04.svg';
 import cloud5 from '../../assets/cloud/cloud_05.svg';
 
 
-export function Login(){
+export function Home(){
 
     const [loginOrGuest,setLoginOrGuest] = useState<'login' | 'guest'>('login')
     const clouds = [cloud1, cloud2, cloud3, cloud4, cloud5]
