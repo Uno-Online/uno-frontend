@@ -6,7 +6,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, #E8DF74 42.93%, #EEE89D 48.17%, #FAF8E3 57.53%, #FFFFFF 61.65%, #629DD8 80.36%);
+    background: linear-gradient(0deg, #E8DF74 42.93%, #EEE89D 48.17%, #FAF8E3 57.53%, #fff 61.65%, #629DD8 80.36%);
     overflow: hidden;
     gap:1rem;
     
@@ -46,7 +46,7 @@
 .form{
     width:28.75rem;
     height: 32rem;
-    background-color: #FFFFFF;
+    background-color: #fff;
     padding:.5rem;
     animation:spin 2s ease;
     z-index: 2;
@@ -56,7 +56,6 @@
     background-image: url('../../assets//world-background.png');
     width: 100%;
     height: 90%;
-   
     position: absolute;
     bottom: 0;
     background-size:cover ;
@@ -85,13 +84,13 @@
 }
 
 .button-header-primary{
-    color: #FFFFFF;
+    color: #fff;
     background-color: #0096DC;
 }
 
 .button-header-secondary{
     color: #0096DC;
-    background-color: #FFFFFF;
+    background-color: #fff;
 }
 
 
@@ -104,7 +103,7 @@
     align-items: center;
     height: 100%;
     background-color: #0096DC;
-    color:#FFFFFF;
+    color:#fff;
     padding:2.5rem;
 }
 
@@ -172,7 +171,7 @@
 }
 
 .area-help a{
-    color: #FFFFFF;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -216,7 +215,7 @@
     }
 }
 
-@keyframes moveCloud {
+@keyframes move-cloud {
     0% {
       transform: translateX(999px) scale(1.5) translateY(10px);
       
