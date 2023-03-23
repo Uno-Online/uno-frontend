@@ -12,6 +12,7 @@
     "release": "changeset publish"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.0.0",
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.0",
     "@hookform/resolvers": "^3.0.0",

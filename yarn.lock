@@ -3059,6 +3059,7 @@ react-cookie@^4.1.1:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+
 react-hook-form@^7.0.0, react-hook-form@^7.43.7:
   version "7.43.7"
   resolved "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.43.7.tgz"
