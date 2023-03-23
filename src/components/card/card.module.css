@@ -31,6 +31,18 @@
   background-color: var(--uno-blue-color);
 }
 
+.card-content-green {
+  background-color: var(--uno-green-color);
+}
+
+.card-content-yellow {
+  background-color: var(--uno-yellow-color);
+}
+
+.card-content-black {
+  background-color: var(--uno-black-color);
+}
+
 .card-circle {
   width: 85px;
   height: 150px;
