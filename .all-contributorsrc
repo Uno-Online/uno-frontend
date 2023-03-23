@@ -17,6 +17,15 @@
         "tool",
         "review"
       ]
+    },
+    {
+      "login": "uriielfl",
+      "name": "Uriel Francisco Libano",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49736581?v=4",
+      "profile": "https://github.com/uriielfl",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
