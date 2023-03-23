@@ -4,10 +4,10 @@ import image from "../../../public/assets/image/card/block.svg?raw"
 
 export interface CardProps {
   color?: CardColor;
-  text: CardText;
+  text?: CardText;
 }
 
-export function Card({ color = CardColor.Red, text }: CardProps): JSX.Element {
+export function Card({ color = CardColor.Red,  text = CardText.Zero }: CardProps): JSX.Element {
   return (
     <button type="button" className={classes.card}>
       <div
