@@ -83,7 +83,7 @@ Para contribuir com Uno Frontend, siga estas etapas:
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## 🤝 Colaboradores
+<!-- ## 🤝 Colaboradores
 
 Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
@@ -114,17 +114,11 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 
-## 📝 Licença
+## Contribuidores ✨
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
-
-[⬆ Voltar ao topo](#Uno-Frontend)<br>
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Muito obrigado a todas essas pessoas maravilhosas! ([emojis?](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -132,7 +126,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fell-lucas"><img src="https://avatars.githubusercontent.com/u/47724710?v=4?s=100" width="100px;" alt="Lucas Fell"/><br /><sub><b>Lucas Fell</b></sub></a><br /><a href="#infra-fell-lucas" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-fell-lucas" title="Maintenance">🚧</a> <a href="#tool-fell-lucas" title="Tools">🔧</a> <a href="https://github.com/Uno-Online/uno-frontend/pulls?q=is%3Apr+reviewed-by%3Afell-lucas" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fell-lucas"><img src="https://avatars.githubusercontent.com/u/47724710?v=4?s=100" width="100px;" alt="Lucas Fell"/><br /><sub><b>Lucas Fell</b></sub></a><br /><a href="#infra-fell-lucas" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-fell-lucas" title="Maintenance">🚧</a> <a href="#tool-fell-lucas" title="Tools">🔧</a> <a href="https://github.com/Uno-Online/uno-backend/pulls?q=is%3Apr+reviewed-by%3Afell-lucas" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
@@ -142,4 +136,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Esse projeto segue a especificação [@all-contributors](https://github.com/all-contributors/all-contributors). Contribuições de todas as formas são bem vindas! 
+
+Por favor, depois de contribuir de qualquer forma, [chame o bot @all-contributors](https://github.com/Uno-Online/uno-backend/pull/41#issuecomment-1481839393) em qualquer issue ou PR e se adicione nesta seção de contribuidores!
+
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+
+[⬆ Voltar ao topo](#Uno-Frontend)<br>
