@@ -1,4 +1,12 @@
 
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
 .container{
     position: relative;
     display: flex;
@@ -35,7 +43,7 @@
 
 .logo{
     width: 14.75rem;   
-    animation: zoom 1s;
+    /* animation: zoom 1s; */
     z-index: 1;
 }
 
@@ -50,10 +58,12 @@
     padding:.5rem;
     z-index: 2;
     animation: fade-in 260ms ease-in;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #00000057;
 }
 
 .bg-world{
-    background-image: url('../../assets//world-background.png');
+    background-image: url('../../assets/world-background.png');
     width: 100%;
     height: 90%;
     position: absolute;
@@ -61,11 +71,8 @@
     background-size:cover ;
     background-repeat: no-repeat;
     background-position:100%;
-    animation: animation-background 2s ease-in-out;  
-
-
+    animation: animation-background 5s ease-in-out;  
 }
-
 
 .header-form{
     display: grid;

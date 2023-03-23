@@ -9,9 +9,10 @@ import { Cookies } from "react-cookie";
 import { Link } from 'react-router-dom'
 
 import { AxiosError } from 'axios';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../../styles.module.css'
 import { api } from '../../../../api';
+import LoginFx from '../fx';
 
 
 
@@ -29,7 +30,8 @@ interface LoginProps{
 export function FormUser({setLoginOrGuest}:FormProps){
 
     const [serverError, setServerError] = useState<string>('')
-
+    
+    
     const cookies = new Cookies();
 
     //schema form
