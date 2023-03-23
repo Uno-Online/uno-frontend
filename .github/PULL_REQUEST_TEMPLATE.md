@@ -1,7 +1,9 @@
-## Atenção!
+Agradecemos se você executar o comando
 
-Se o seu PR fizer uma alteração que deva ser incluída nos changelogs, (praticamente qualquer mudança que adicione ou altere a funcionalidade do código) gere um conjunto de alterações executando `yarn changeset` e seguindo os prompts. Conjuntos de alterações que adicionam recursos devem ser `minor` (aumentarão a versão minor 0.x.0) e aqueles que corrigem bugs devem ser `patch` (aumentarão a versão patch 0.0.x).
+```
+yarn changeset
+```
 
-Sanity check:
+e seguir os prompts antes de fazer o merge do PR. Assim, teremos um histórico das mudanças que ocorreram ao longo do tempo no repositório, que podem ser vistas no arquivo [CHANGELOG.md](https://github.com/Uno-Online/uno-frontend/blob/main/CHANGELOG.md).
 
-- [ ] Meu código altera funcionalidades existentes ou adiciona novas funcionalidades, por isso adicionei um novo changeset.
+[Demo](https://imgur.com/a/FyEntxB)
