@@ -26,3 +26,4 @@ dist-ssr
 # Different package managers - version only yarn.lock
 package-lock.json
 pnpm-lock.yaml
+yarn.lock
