@@ -15,15 +15,15 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      rules: {
-        "no-param-reassign": "warn",
-      },
-    },
-    {
       files: ["vite.config.ts"],
       rules: {
         "import/no-extraneous-dependencies": "off",
+      },
+    },
+    {
+      files: ["./src/vite-env.d.ts"],
+      rules: {
+        "check-file/filename-naming-convention": "off",
       },
     },
   ],
@@ -33,13 +33,19 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "@typescript-eslint", "check-file"],
   rules: {
     "import/prefer-default-export": "off",
     "react/require-default-props": [
       "error",
       {
         functions: "defaultArguments",
+      },
+    ],
+    "check-file/filename-naming-convention": [
+      "error",
+      {
+        "**/*.{js,ts,jsx,tsx}": "KEBAB_CASE",
       },
     ],
   },
