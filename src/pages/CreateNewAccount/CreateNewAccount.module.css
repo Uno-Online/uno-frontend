@@ -1,0 +1,84 @@
+.form-button {
+  background-color: bisque;
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 15.625rem;
+  min-height: 2.5rem;
+}
+
+.form-container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 32.5rem;
+}
+
+.form-fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.form-fieldset-inputs {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.form-legend {
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-container {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width: 69.375rem;
+  min-height: 5rem;
+}
+
+.header-title {
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 69.375rem;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+  min-height: 100vh;
+}
