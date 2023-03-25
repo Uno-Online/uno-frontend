@@ -1,25 +1,25 @@
-import { zodResolver } from "@hookform/resolvers/zod";
-import { Controller, useForm } from "react-hook-form";
-import * as zod from "zod";
-import styles from "./CreateNewAccount.module.css";
-import { TextField } from "../../components/TextField/TextField";
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Controller, useForm } from 'react-hook-form';
+import * as zod from 'zod';
+import { TextField } from '../../components/TextField/TextField';
+import styles from './CreateNewAccount.module.css';
 
 type Form = zod.infer<typeof schema>;
 
 const schema = zod
   .object({
-    email: zod.string().min(1, "Campo em branco").email("Email incorreto"),
-    name: zod.string().min(1, "Campo em branco"),
-    password: zod.string().min(1, "Campo em branco"),
-    confirm_password: zod.string().min(1, "Campo em branco"),
+    email: zod.string().min(1, 'Campo em branco').email('Email incorreto'),
+    name: zod.string().min(1, 'Campo em branco'),
+    password: zod.string().min(1, 'Campo em branco'),
+    confirm_password: zod.string().min(1, 'Campo em branco'),
   })
   .superRefine(({ confirm_password, password }, context) => {
     if (confirm_password === password) return;
 
     context.addIssue({
-      code: "custom",
-      message: "Senhas não coincidem...",
-      path: ["confirm_password"],
+      code: 'custom',
+      message: 'Senhas não coincidem...',
+      path: ['confirm_password'],
     });
   });
 
@@ -33,27 +33,27 @@ export function CreateNewAccount() {
   });
 
   return (
-    <div className={styles["page-container"]}>
-      <header className={styles["header-container"]}>
-        <h1 className={styles["header-title"]}>Algum Header Legal</h1>
+    <div className={styles['page-container']}>
+      <header className={styles['header-container']}>
+        <h1 className={styles['header-title']}>Algum Header Legal</h1>
       </header>
 
-      <main className={styles["main-container"]}>
+      <main className={styles['main-container']}>
         <form
-          className={styles["form-container"]}
+          className={styles['form-container']}
           onSubmit={handleSubmit((data) => {})}
         >
-          <fieldset className={styles["form-fieldset"]}>
-            <legend className={styles["form-legend"]}>Crie Sua Conta</legend>
+          <fieldset className={styles['form-fieldset']}>
+            <legend className={styles['form-legend']}>Crie Sua Conta</legend>
 
-            <div className={styles["form-fieldset-inputs"]}>
+            <div className={styles['form-fieldset-inputs']}>
               <Controller
                 control={control}
                 defaultValue=""
                 name="email"
                 render={({ field }) => (
                   <TextField
-                    error={"email" in errors}
+                    error={'email' in errors}
                     helperText={errors.email?.message}
                     label="Email"
                     name={field.name}
@@ -72,7 +72,7 @@ export function CreateNewAccount() {
                 name="name"
                 render={({ field }) => (
                   <TextField
-                    error={"name" in errors}
+                    error={'name' in errors}
                     helperText={errors.name?.message}
                     label="Nome"
                     name={field.name}
@@ -91,7 +91,7 @@ export function CreateNewAccount() {
                 name="password"
                 render={({ field }) => (
                   <TextField
-                    error={"password" in errors}
+                    error={'password' in errors}
                     helperText={errors.password?.message}
                     label="Senha"
                     name={field.name}
@@ -110,7 +110,7 @@ export function CreateNewAccount() {
                 name="confirm_password"
                 render={({ field }) => (
                   <TextField
-                    error={"confirm_password" in errors}
+                    error={'confirm_password' in errors}
                     helperText={errors.confirm_password?.message}
                     label="Confirmar Senha"
                     name={field.name}
@@ -125,7 +125,7 @@ export function CreateNewAccount() {
             </div>
           </fieldset>
 
-          <button className={styles["form-button"]} type="submit">
+          <button className={styles['form-button']} type="submit">
             Cadastrar Nova Conta
           </button>
         </form>

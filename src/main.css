@@ -14,8 +14,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-
-
 body,
 #root {
   height: 100vh;
@@ -28,10 +26,6 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   color: #fff;
-}
-
-body{
-  font-family: Cabin, sans-serif;
 }
 
 button {
