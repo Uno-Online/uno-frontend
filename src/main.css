@@ -5,17 +5,28 @@
   --uno-yellow-color: #ecd407;
 }
 
-
-*{
+* {
   box-sizing: border-box;
-  padding:0;
-  margin:0;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+  min-width: 0;
   -webkit-font-smoothing: antialiased;
 }
+
+
 
 body,
 #root {
   height: 100vh;
+  color: #fff;
+}
+
+body {
+  font-family: Cabin, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
   color: #fff;
 }
 
@@ -25,4 +36,5 @@ body{
 
 button {
   color: inherit;
+  cursor: pointer;
 }

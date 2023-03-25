@@ -18,6 +18,7 @@ module.exports = {
       files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
       rules: {
         "no-param-reassign": "warn",
+        "import/extensions": "off"
       },
     },
     {

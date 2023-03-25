@@ -1,5 +1,21 @@
 # @uno-online/uno-frontend
 
+## 0.1.0-next.2
+
+### Minor Changes
+
+- [#27](https://github.com/Uno-Online/uno-frontend/pull/27) [`ca63919`](https://github.com/Uno-Online/uno-frontend/commit/ca63919c8c495cd4a26a764baafce8af8d470ea9) Thanks [@uriielfl](https://github.com/uriielfl)! - add eslint rule to imports
+
+- [#27](https://github.com/Uno-Online/uno-frontend/pull/27) [`ca63919`](https://github.com/Uno-Online/uno-frontend/commit/ca63919c8c495cd4a26a764baafce8af8d470ea9) Thanks [@uriielfl](https://github.com/uriielfl)! - add absolut imports to development
+
+- [#27](https://github.com/Uno-Online/uno-frontend/pull/27) [`ca63919`](https://github.com/Uno-Online/uno-frontend/commit/ca63919c8c495cd4a26a764baafce8af8d470ea9) Thanks [@uriielfl](https://github.com/uriielfl)! - add absolut imports to existing components
+
+## 0.0.2-next.1
+
+### Patch Changes
+
+- [#18](https://github.com/Uno-Online/uno-frontend/pull/18) [`ff9b1e5`](https://github.com/Uno-Online/uno-frontend/commit/ff9b1e535ec445e8a72ce41a421779c52be2a68c) Thanks [@EduNunesGithub](https://github.com/EduNunesGithub)! - criado página de nova conta
+
 ## 0.0.2-next.0
 
 ### Patch Changes

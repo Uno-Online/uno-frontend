@@ -2,20 +2,34 @@ import React from "react";
 import styles from "./TextField.module.css";
 
 export type TextFieldProps = {
-  id?: string | undefined;
-  label?: string | undefined;
+  error?: boolean;
+  helperText?: string;
+  id?: string;
+  label?: string;
   maxWidth?: React.CSSProperties["maxWidth"];
-  placeholder?: string | undefined;
-  required?: boolean | undefined;
+  name?: string;
+  onBlur?: React.FocusEventHandler<HTMLInputElement>;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  placeholder?: string;
+  required?: boolean;
+  requiredDecoration?: boolean;
+  value?: string | number | readonly string[];
   width?: React.CSSProperties["width"];
 };
 
 export function TextField({
   id = undefined,
-  label = "Label",
+  error = undefined,
+  helperText = undefined,
+  label = undefined,
   maxWidth = undefined,
+  name = undefined,
+  onBlur = undefined,
+  onChange = undefined,
   placeholder = undefined,
   required = undefined,
+  requiredDecoration = undefined,
+  value = undefined,
   width = "100%",
 }: TextFieldProps) {
   return (
@@ -27,7 +41,7 @@ export function TextField({
       <span className={styles["text-field-label"]}>
         {label}
 
-        {required === true && (
+        {(required || requiredDecoration) && (
           <span className={styles["text-field-label-red"]}>{" *"}</span>
         )}
       </span>
@@ -35,10 +49,18 @@ export function TextField({
       <input
         className={styles["text-field-input"]}
         id={id}
+        name={name}
+        onBlur={onBlur}
+        onChange={onChange}
         placeholder={placeholder}
         required={required}
         type="text"
+        value={value}
       />
+
+      {error && (
+        <span className={styles["text-field-helper-text"]}>{helperText}</span>
+      )}
     </label>
   );
 }
