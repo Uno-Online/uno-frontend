@@ -49,6 +49,12 @@ module.exports = {
         functions: "defaultArguments",
       },
     ],
+    "check-file/folder-naming-convention": [
+      "error",
+      {
+        "src/**/": "KEBAB_CASE",
+      },
+    ],
     "check-file/filename-naming-convention": [
       "error",
       {

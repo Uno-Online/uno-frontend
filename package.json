@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
     "stylelint": "stylelint src/**/*.css --fix",
-    "lint:ci": "eslint src --ext .js,.jsx,.ts,.tsx && stylelint src/**/*.css",
+    "format": "prettier --write src/",
+    "lint:ci": "npm run lint && stylelint src/**/*.css",
     "release": "changeset publish",
     "prepare": "husky install"
   },
