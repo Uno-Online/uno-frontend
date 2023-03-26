@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./TextField.module.css";
+import styles from "./text-field.module.css";
 
 export type TextFieldProps = {
   error?: boolean;

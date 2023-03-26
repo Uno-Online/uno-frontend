@@ -9,7 +9,7 @@ import { Cookies } from "react-cookie";
 import { Link } from "react-router-dom";
 import { AxiosError } from "axios";
 import { useState } from "react";
-import styles from "../../styles.module.css";
+import styles from "../../home.module.css";
 import { api } from "../../../../api";
 
 interface FormProps {
