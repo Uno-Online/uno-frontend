@@ -9,7 +9,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Cookies } from "react-cookie";
 import { Link } from "react-router-dom";
 import { AxiosError } from "axios";
-import styles from "../../home.module.css";
+import styles from "./form-user.module.css";
 import { api } from "@/api";
 
 interface FormProps {

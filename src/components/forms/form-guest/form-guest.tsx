@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { AxiosError } from "axios";
 import { useState } from "react";
 import { api } from "@/api";
-import styles from "../../home.module.css";
+import styles from "./form-guest.module.css";
 
 interface FormProps {
   setLoginOrGuest: (typeForm: "login" | "guest") => void;
