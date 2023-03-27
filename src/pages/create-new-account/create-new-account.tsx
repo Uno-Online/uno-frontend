@@ -1,8 +1,8 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 import * as zod from "zod";
-import styles from "./CreateNewAccount.module.css";
-import { TextField } from "../../components/TextField/TextField";
+import { TextField } from "@/components";
+import styles from "./create-new-account.module.css";
 
 type Form = zod.infer<typeof schema>;
 
@@ -41,7 +41,7 @@ export function CreateNewAccount() {
       <main className={styles["main-container"]}>
         <form
           className={styles["form-container"]}
-          onSubmit={handleSubmit((data) => {})}
+          onSubmit={handleSubmit(() => {})}
         >
           <fieldset className={styles["form-fieldset"]}>
             <legend className={styles["form-legend"]}>Crie Sua Conta</legend>
