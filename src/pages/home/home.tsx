@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-import { FormGuest } from "./components/form-guest/form-guest";
-import { FormUser } from "./components/form-user/form-user";
+import { FormGuest, FormUser } from "@/components";
 import styles from "./home.module.css";
 import logo from "../../assets/logo.svg";
 

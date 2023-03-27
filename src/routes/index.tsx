@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { CreateNewAccount } from "../pages/create-new-account/create-new-account";
-import { Home } from "../pages/home/home";
+import { CreateNewAccount, Home } from "@/pages";
 
 export const router = createBrowserRouter([
   {
