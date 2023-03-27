@@ -2,15 +2,15 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable import/no-extraneous-dependencies */
+import { useState } from "react";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Cookies } from "react-cookie";
 import { Link } from "react-router-dom";
 import { AxiosError } from "axios";
-import { useState } from "react";
-import styles from "../../home.module.css";
-import { api } from "../../../../api";
+import styles from "./form-user.module.css";
+import { api } from "@/api";
 
 interface FormProps {
   setLoginOrGuest: (typeForm: "login" | "guest") => void;

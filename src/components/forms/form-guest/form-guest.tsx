@@ -9,8 +9,8 @@ import { Cookies } from "react-cookie";
 import { Link } from "react-router-dom";
 import { AxiosError } from "axios";
 import { useState } from "react";
-import styles from "../../home.module.css";
-import { api } from "../../../../api";
+import { api } from "@/api";
+import styles from "./form-guest.module.css";
 
 interface FormProps {
   setLoginOrGuest: (typeForm: "login" | "guest") => void;

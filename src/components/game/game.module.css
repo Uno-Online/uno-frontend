@@ -1,8 +1,0 @@
-.board {
-  background: linear-gradient(90deg, #6a1105 10%, #ef150a 50%, #6a1105 90%);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
