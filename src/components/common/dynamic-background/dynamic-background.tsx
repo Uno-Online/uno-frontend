@@ -36,12 +36,13 @@ const createClassName: CreateClassName = ({
   customTheme = [],
   theme = CardColor.Blue,
 }) => {
-  if (customTheme.length !== 0) return className;
-
   const customClassName =
     className === undefined
-      ? themeClasses[theme]
-      : themeClasses[theme].concat(" ", className);
+      ? styles["dynamic-background"]
+      : styles["dynamic-background"].concat(" ", className);
+
+  if (customTheme.length === 0)
+    return customClassName.concat(" ", themeClasses[theme]);
 
   return customClassName;
 };
