@@ -13,7 +13,7 @@ type SpinnerCarProps = {
 
 export function SpinnerCard({
   children,
-  flow = 'clockwise',
+  flow = 'anti-clockwise',
   rotate,
 }: SpinnerCarProps) {
   const rotateFrom = styles[flow];

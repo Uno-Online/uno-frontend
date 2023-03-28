@@ -10,14 +10,14 @@
 .container > div:first-child {
   position: absolute;
   display: flex;
-  transition: transform 1.5s linear;
+  transition: transform 1.8s linear;
   flex-direction: column;
 }
 
 .clockwise {
-  transform: rotate(360deg);
+  transform: rotate(180deg);
 }
 
 .anti-clockwise {
-  transform: rotate(-360deg);
+  transform: rotate(-180deg);
 }
