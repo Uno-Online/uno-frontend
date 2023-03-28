@@ -20,7 +20,7 @@ export function Button({
       type="button"
       onClick={onClick}
       aria-label={ariaLabel}
-      className={`${classes.btn} ${classes[`btn-${theme}`]} ${className ? className : ''}`}
+      className={`${classes.btn} ${classes[`btn-${theme}`]} ${className || ''}`}
     >
       {children}
     </button>
