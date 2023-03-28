@@ -1,14 +1,15 @@
-import { createBrowserRouter } from "react-router-dom";
-import { CreateNewAccount } from "../pages/create-new-account/create-new-account";
-import { Home } from "../pages/home/home";
+import { createBrowserRouter } from 'react-router-dom';
+import { CreateNewAccount } from '../pages/create-new-account/create-new-account';
+
+import { Home } from '../pages/home/home';
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Home />,
   },
   {
-    path: "/new-account",
+    path: '/new-account',
     element: <CreateNewAccount />,
   },
 ]);

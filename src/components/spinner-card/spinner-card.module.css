@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 44px 0;
+}
+
+.container > div:first-child {
+  position: absolute;
+  display: flex;
+  transition: transform 1.8s linear;
+  flex-direction: column;
+}
+
+.clockwise {
+  transform: rotate(180deg);
+}
+
+.anti-clockwise {
+  transform: rotate(-180deg);
+}
