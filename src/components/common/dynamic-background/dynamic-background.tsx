@@ -1,17 +1,49 @@
 import React from "react";
+import { CardColor } from "@/constants";
 import styles from "./dynamic-background.module.css";
+
+type CreateClassName = (arg0: {
+  className?: string;
+  customTheme?: React.CSSProperties["backgroundColor"][];
+  theme?: CardColor;
+}) => string | undefined;
 
 type CreateCustomTheme = (
   arg0: React.CSSProperties["backgroundColor"][]
 ) => React.CSSProperties;
 
 export type DynamicBackgroundProps = {
+  children?: React.ReactNode;
+  className?: string;
   customTheme?: React.CSSProperties["backgroundColor"][];
-  theme?: "blue" | "green" | "red" | "yellow";
+  style?: React.CSSProperties;
+  theme?: CardColor;
 };
 
-type ThemeStyles = {
-  [key: string]: React.CSSProperties;
+type ThemeClasses = {
+  [key: string]: string;
+};
+
+const themeClasses: ThemeClasses = {
+  blue: styles["dynamic-background-blue"],
+  green: styles["dynamic-background-green"],
+  red: styles["dynamic-background-red"],
+  yellow: styles["dynamic-background-yellow"],
+};
+
+const createClassName: CreateClassName = ({
+  className = undefined,
+  customTheme = [],
+  theme = CardColor.Blue,
+}) => {
+  if (customTheme.length !== 0) return className;
+
+  const customClassName =
+    className === undefined
+      ? themeClasses[theme]
+      : themeClasses[theme].concat(" ", className);
+
+  return customClassName;
 };
 
 const createCustomTheme: CreateCustomTheme = (customTheme = []) => {
@@ -20,33 +52,22 @@ const createCustomTheme: CreateCustomTheme = (customTheme = []) => {
   return { backgroundImage: `radial-gradient(circle closest-side, ${colors})` };
 };
 
-const themeStyles: ThemeStyles = {
-  blue: {
-    backgroundImage: `radial-gradient(circle closest-side, #65C0E3, #3E6BD9)`,
-  },
-  green: {
-    backgroundImage: `radial-gradient(circle closest-side, #43F555, #01A54E)`,
-  },
-  red: {
-    backgroundImage: `radial-gradient(circle closest-side, #F97E84, #ED1A24)`,
-  },
-  yellow: {
-    backgroundImage: `radial-gradient(circle closest-side, #FFF5B1, #E3BF00)`,
-  },
-};
-
 export function DynamicBackground({
+  children = undefined,
+  className = undefined,
   customTheme = [],
-  theme = "blue",
+  style = undefined,
+  theme = CardColor.Blue,
 }: DynamicBackgroundProps) {
   return (
     <div
-      className={styles["dynamic-background"]}
-      style={
-        customTheme.length === 0
-          ? themeStyles[theme]
-          : createCustomTheme(customTheme)
-      }
-    />
+      className={createClassName({ className, customTheme, theme })}
+      style={{
+        ...createCustomTheme(customTheme),
+        ...style,
+      }}
+    >
+      {children}
+    </div>
   );
 }

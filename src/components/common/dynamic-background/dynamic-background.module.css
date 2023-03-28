@@ -2,8 +2,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
-  z-index: -1000000;
-  width: 100vw;
-  height: 100vh;
+}
+
+.dynamic-background-blue {
+  background-image: radial-gradient(circle closest-side, #65c0e3, #3e6bd9);
+}
+
+.dynamic-background-green {
+  background-image: radial-gradient(circle closest-side, #43f555, #01a54e);
+}
+
+.dynamic-background-red {
+  background-image: radial-gradient(circle closest-side, #f97e84, #ed1a24);
+}
+
+.dynamic-background-yellow {
+  background-image: radial-gradient(circle closest-side, #fff5b1, #e3bf00);
+}
+
+.teste {
+  background: red;
 }
