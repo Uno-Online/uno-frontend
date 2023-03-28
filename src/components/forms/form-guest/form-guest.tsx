@@ -11,6 +11,7 @@ import { AxiosError } from "axios";
 import { useState } from "react";
 import { api } from "@/api";
 import styles from "./form-guest.module.css";
+import { Button } from "@/components/common";
 
 interface FormProps {
   setLoginOrGuest: (typeForm: "login" | "guest") => void;
