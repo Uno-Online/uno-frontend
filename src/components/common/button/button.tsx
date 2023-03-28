@@ -13,14 +13,14 @@ export function Button({
   children,
   "aria-label": ariaLabel,
   theme = 'primary',
-  className
+  className = ''
 }: ButtonProps) {
   return (
     <button
       type="button"
       onClick={onClick}
       aria-label={ariaLabel}
-      className={`${classes.btn} ${classes[`btn-${theme}`]} ${className || ''}`}
+      className={`${classes.btn} ${classes[`btn-${theme}`]} ${className}`}
     >
       {children}
     </button>
