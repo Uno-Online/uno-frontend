@@ -1,0 +1,16 @@
+.container-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem
+}
+
+.button-pagination{
+    background-color: transparent;
+    border:none;
+
+}
+
+.button-pagination:disabled{
+    cursor:not-allowed
+}

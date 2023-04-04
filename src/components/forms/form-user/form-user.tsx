@@ -22,6 +22,8 @@ interface LoginProps {
   checkbox: boolean;
 }
 
+
+
 export function FormUser({ setLoginOrGuest }: FormProps) {
   const [serverError, setServerError] = useState<string>("");
 
@@ -84,6 +86,7 @@ export function FormUser({ setLoginOrGuest }: FormProps) {
             Convidado
           </button>
         </header>
+
         {serverError ?? (
           <small className={styles["form-error"]}>{serverError}</small>
         )}
