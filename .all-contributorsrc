@@ -26,6 +26,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "hemerson-git",
+      "name": "Hemerson Oliveira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48595787?v=4",
+      "profile": "https://hemerson-dev.vercel.app/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
