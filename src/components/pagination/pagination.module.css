@@ -5,12 +5,15 @@
     gap:1rem
 }
 
-.button-pagination{
+.button-pagination-left, .button-pagination-right{
     background-color: transparent;
     border:none;
-
 }
 
-.button-pagination:disabled{
+.button-pagination-right{
+    transform: rotateY(180deg);
+}
+
+.button-pagination-left:disabled, .button-pagination-right:disabled{
     cursor:not-allowed
 }
