@@ -1,4 +1,5 @@
 export { Button } from "./button/button";
 export { Card } from "./card/card";
 export { TextField } from "./text-field/text-field";
-export { UserCard } from "./user";
+export { Checkbox } from "./checkbox/checkbox";
+
