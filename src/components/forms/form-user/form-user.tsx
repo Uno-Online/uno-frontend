@@ -127,7 +127,7 @@ export function FormUser({ setLoginOrGuest }: FormProps) {
           </label>
 
           <label htmlFor="checkbox">
-            <input type="checkbox" />
+            <input type="checkbox" id="checkbox" />
             <span>Lembrar credenciais por 30 dias</span>
           </label>
         </div>
@@ -137,8 +137,7 @@ export function FormUser({ setLoginOrGuest }: FormProps) {
           type="submit"
           className={styles["button-form"]}
         >
-          {" "}
-          Entrar{" "}
+          Entrar
         </button>
         <div className={styles["area-help"]}>
           <Link to="/forget-password">Esqueci minha senha</Link>
