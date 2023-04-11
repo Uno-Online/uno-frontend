@@ -1,0 +1,34 @@
+.input {
+  display: none;
+}
+
+.checkbox-container {
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Cabin, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  user-select: none;
+}
+
+.checkbox {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6.5px 3.5px;
+  background: #FFF;
+  box-shadow: -4px 4px 0 #000;
+  border-radius: 4px;
+}

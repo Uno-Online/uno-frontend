@@ -1,6 +1,6 @@
 # Uno-Frontend
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
@@ -128,6 +128,7 @@ Muito obrigado a todas essas pessoas maravilhosas! ([emojis?](https://allcontrib
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/fell-lucas"><img src="https://avatars.githubusercontent.com/u/47724710?v=4?s=100" width="100px;" alt="Lucas Fell"/><br /><sub><b>Lucas Fell</b></sub></a><br /><a href="#infra-fell-lucas" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-fell-lucas" title="Maintenance">🚧</a> <a href="#tool-fell-lucas" title="Tools">🔧</a> <a href="https://github.com/Uno-Online/uno-frontend/pulls?q=is%3Apr+reviewed-by%3Afell-lucas" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/uriielfl"><img src="https://avatars.githubusercontent.com/u/49736581?v=4?s=100" width="100px;" alt="Uriel Francisco Libano"/><br /><sub><b>Uriel Francisco Libano</b></sub></a><br /><a href="https://github.com/Uno-Online/uno-frontend/commits?author=uriielfl" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://hemerson-dev.vercel.app/"><img src="https://avatars.githubusercontent.com/u/48595787?v=4?s=100" width="100px;" alt="Hemerson Oliveira"/><br /><sub><b>Hemerson Oliveira</b></sub></a><br /><a href="https://github.com/Uno-Online/uno-frontend/commits?author=hemerson-git" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
