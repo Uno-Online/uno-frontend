@@ -5,11 +5,13 @@
     "@uno-online/uno-frontend": "0.0.1"
   },
   "changesets": [
+    "afraid-boxes-rhyme",
     "dirty-coins-beam",
     "gentle-plants-eat",
     "kind-plums-compete",
     "long-emus-cross",
     "moody-llamas-flow",
-    "wet-items-push"
+    "wet-items-push",
+    "yellow-crabs-tie"
   ]
 }
