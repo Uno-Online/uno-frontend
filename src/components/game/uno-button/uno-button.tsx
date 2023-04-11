@@ -1,14 +1,15 @@
-import classes from "./uno-button.module.css";
 import { ButtonHTMLAttributes } from "react";
+import classes from "./uno-button.module.css";
 
-interface UnoButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
+type UnoButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
 
-export function UnoButton(props: UnoButtonProps) {
+export function UnoButton({ onClick, "aria-label": ariaLabel }: UnoButtonProps) {
   return (
     <button
       type="button"
       className={classes.button}
-      {...props}
+      onClick={onClick}
+      aria-label={ariaLabel}
     >
       <div className={classes.pressable}>
         <div className={classes.light} />
