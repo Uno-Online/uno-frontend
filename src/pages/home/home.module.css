@@ -27,6 +27,7 @@
   position: absolute;
   top: 0;
   gap: 100px;
+  user-select: none;
 }
 
 .cloud {
@@ -43,6 +44,7 @@
   width: 14.75rem;
   animation: zoom 1s;
   z-index: 1;
+  user-select: none;
 }
 
 .logo img {
@@ -85,6 +87,7 @@
   border: none;
   cursor: pointer;
   font-weight: bold;
+  user-select: none;
 }
 
 .button-header-primary {

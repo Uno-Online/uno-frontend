@@ -120,8 +120,7 @@ export function FormGuest({ setLoginOrGuest }: FormProps) {
           disabled={isSubmitting}
           className={styles["button-form"]}
         >
-          {" "}
-          Entrar{" "}
+          Entrar
         </button>
         <div className={styles["area-help"]}>
           <Link to="/create-room">Criar nova sala</Link>
