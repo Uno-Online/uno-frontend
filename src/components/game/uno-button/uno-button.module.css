@@ -1,0 +1,73 @@
+:root {
+  --btn-bg: hsl(358, 85%, 52%);
+  --btn-bg-dark: hsl(353, 85%, 37%);
+
+  --btn-bg-radial-color: hsl(0, 0%, 100%);
+  --btn-label-color: hsl(52, 99%, 49%);
+  --btn-size: 200px;
+}
+
+.button {
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--btn-bg-dark);
+
+  transform: rotate(-20deg);
+  border: none;
+}
+
+.pressable {
+  width: var(--btn-size);
+  height: var(--btn-size);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  will-change: transform;
+  transition: transform 250ms;
+  background-color: var(--btn-bg);
+
+  transform: translateY(-4px);
+}
+
+.light {
+  width: calc(var(--btn-size)*30/100);
+  height: calc(var(--btn-size)*30/100);
+  background-color: rgba(255, 255, 255, .5);
+  box-shadow: 1px 1px 100px rgba(255, 255, 255, .6);
+  filter: blur(10px);
+  border-radius: 50%;
+
+  z-index: 1;
+  position: absolute;
+  left: 40%;
+  top: 25%;
+}
+
+.label {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: var(--btn-label-color);
+  z-index: 2;
+
+  text-shadow: 
+    2px 2px 2px #FFFFFF,
+    5px 5px 5px #000000
+  ;
+}
+
+
+/** */
+.button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.button:hover .pressable {
+  transform: translateY(-10px);
+}
+
+.button:active .pressable {
+  transform: translateY(-2px);
+}
