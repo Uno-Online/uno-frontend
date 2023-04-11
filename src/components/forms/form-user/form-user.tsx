@@ -1,7 +1,5 @@
-/* eslint-disable spaced-comment */
-/* eslint-disable no-restricted-globals */
 /* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable import/no-extraneous-dependencies */
+
 import { useState } from "react";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
@@ -12,52 +10,45 @@ import { AxiosError } from "axios";
 import styles from "./form-user.module.css";
 import { api } from "@/api";
 
-interface FormProps {
-  setLoginOrGuest: (typeForm: "login" | "guest") => void;
-}
-
 interface LoginProps {
   email: string;
   password: string;
-  checkbox: boolean;
 }
 
-export function FormUser({ setLoginOrGuest }: FormProps) {
+export function FormUser() {
   const [serverError, setServerError] = useState<string>("");
 
   const cookies = new Cookies();
 
-  //schema form
-  const loginFormSechema = z.object({
+  // schema form
+  const loginFormSchema = z.object({
     email: z.string().email({ message: "Email inválido" }),
     password: z
       .string()
       .min(4, { message: "A senha deve ter pelo menos 4 caracteres" }),
-    checkbox: z.boolean(),
   });
 
-  type LoginFormType = z.infer<typeof loginFormSechema>;
+  type LoginFormType = z.infer<typeof loginFormSchema>;
 
-  //useForm
+  // useForm
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors, isSubmitting },
   } = useForm<LoginFormType>({
-    resolver: zodResolver(loginFormSechema),
+    resolver: zodResolver(loginFormSchema),
   });
 
-  //get login to rooms
-  async function login({ email, password, checkbox }: LoginProps) {
+  // get login to rooms
+  async function login({ email, password }: LoginProps) {
     try {
       const response = await api.post("/login", {
         email,
         password,
-        rememberLogin: checkbox,
       });
       cookies.set("@unoToken", response.data.token);
       cookies.set("@unoID", response.data.id);
+      // eslint-disable-next-line no-restricted-globals
       location.href = "/rooms";
     } catch (err) {
       if (err instanceof AxiosError && err.response?.data?.message) {
@@ -69,21 +60,6 @@ export function FormUser({ setLoginOrGuest }: FormProps) {
   return (
     <form className={styles.form} onSubmit={handleSubmit(login)}>
       <div className={styles["content-form"]}>
-        <header className={styles["header-form"]}>
-          <button type="button" className={styles["button-header-primary"]}>
-            Entrar
-          </button>
-          <button
-            type="button"
-            className={styles["button-header-secondary"]}
-            onClick={() => {
-              reset();
-              setLoginOrGuest("guest");
-            }}
-          >
-            Convidado
-          </button>
-        </header>
         {serverError ?? (
           <small className={styles["form-error"]}>{serverError}</small>
         )}
@@ -125,24 +101,25 @@ export function FormUser({ setLoginOrGuest }: FormProps) {
               ""
             )}
           </label>
-
-          <label htmlFor="checkbox">
-            <input type="checkbox" />
-            <span>Lembrar credenciais por 30 dias</span>
-          </label>
         </div>
-        <button
-          aria-label="Entrar"
-          disabled={isSubmitting}
-          type="submit"
-          className={styles["button-form"]}
-        >
-          {" "}
-          Entrar{" "}
-        </button>
+        <div className={styles["area-buttons"]}>
+          <button
+            className={styles["button-enter"]}
+            disabled={isSubmitting}
+            type="submit"
+          >
+            Entrar
+          </button>
+          <Link
+            className={styles["button-new-account"]}
+            target="_blank"
+            to="/new-account"
+          >
+            Cadastrar-se
+          </Link>
+        </div>
         <div className={styles["area-help"]}>
           <Link to="/forget-password">Esqueci minha senha</Link>
-          <Link to="/create-account">Crie sua conta</Link>
         </div>
       </div>
     </form>

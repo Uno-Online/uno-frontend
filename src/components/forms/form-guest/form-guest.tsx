@@ -6,22 +6,17 @@ import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Cookies } from "react-cookie";
-import { Link } from "react-router-dom";
 import { AxiosError } from "axios";
 import { useState } from "react";
 import { api } from "@/api";
 import styles from "./form-guest.module.css";
-
-interface FormProps {
-  setLoginOrGuest: (typeForm: "login" | "guest") => void;
-}
 
 interface LogimGuestProps {
   name: string;
   room: string;
 }
 
-export function FormGuest({ setLoginOrGuest }: FormProps) {
+export function FormGuest() {
   const [serverError, setServerError] = useState<string>("");
 
   const cookies = new Cookies();
@@ -38,7 +33,6 @@ export function FormGuest({ setLoginOrGuest }: FormProps) {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors, isSubmitting },
   } = useForm<LoginFormType>({
     resolver: zodResolver(loginFormSechema),
@@ -62,52 +56,22 @@ export function FormGuest({ setLoginOrGuest }: FormProps) {
   return (
     <form className={styles.form} onSubmit={handleSubmit(login)}>
       <div className={styles["content-form"]}>
-        <header className={styles["header-form"]}>
-          <button
-            type="button"
-            className={styles["button-header-secondary"]}
-            onClick={() => {
-              reset();
-              setLoginOrGuest("login");
-            }}
-          >
-            Entrar
-          </button>
-          <button type="button" className={styles["button-header-primary"]}>
-            Convidado
-          </button>
-        </header>
         {serverError ?? (
           <small className={styles["form-error"]}>{serverError}</small>
         )}
+
         <div className={styles["input-group"]}>
           <label htmlFor="name">
-            <span>Nome</span>
+            <span>Escolha seu Nick</span>
             <input
               type="text"
               className={errors.name?.message ? `${styles["input-error"]}` : ""}
               {...register("name")}
-              placeholder="Escolha seu nick"
+              placeholder="SeuNickAqui"
             />
             {errors.name?.message ? (
               <small className={styles["form-error"]}>
                 {errors.name?.message}
-              </small>
-            ) : (
-              ""
-            )}
-          </label>
-          <label htmlFor="number">
-            <span>Sala</span>
-            <input
-              type="number"
-              className={errors.room?.message ? `${styles["input-error"]}` : ""}
-              {...register("room")}
-              placeholder="Digite o código da sala"
-            />
-            {errors.room?.message ? (
-              <small className={styles["form-error"]}>
-                {errors.room?.message}
               </small>
             ) : (
               ""
@@ -123,9 +87,6 @@ export function FormGuest({ setLoginOrGuest }: FormProps) {
           {" "}
           Entrar{" "}
         </button>
-        <div className={styles["area-help"]}>
-          <Link to="/create-room">Criar nova sala</Link>
-        </div>
       </div>
     </form>
   );
