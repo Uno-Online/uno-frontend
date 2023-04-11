@@ -1,5 +1,13 @@
 # @uno-online/uno-frontend
 
+## 0.1.0-next.3
+
+### Minor Changes
+
+- [#58](https://github.com/Uno-Online/uno-frontend/pull/58) [`6549778`](https://github.com/Uno-Online/uno-frontend/commit/65497786c2cc64c3312112391ca18782c4f8b16e) Thanks [@hemerson-git](https://github.com/hemerson-git)! - Add checkbox feat#44
+
+- [#52](https://github.com/Uno-Online/uno-frontend/pull/52) [`0c4aca7`](https://github.com/Uno-Online/uno-frontend/commit/0c4aca768b84d2b4a7d6d3622f285ec78650e7eb) Thanks [@hemerson-git](https://github.com/hemerson-git)! - update button component
+
 ## 0.1.0-next.2
 
 ### Minor Changes
