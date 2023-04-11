@@ -27,8 +27,6 @@
   position: absolute;
   top: 0;
   gap: 100px;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -46,8 +44,6 @@
   width: 14.75rem;
   animation: zoom 1s;
   z-index: 1;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -91,8 +87,6 @@
   border: none;
   cursor: pointer;
   font-weight: bold;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 

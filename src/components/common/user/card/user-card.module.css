@@ -5,11 +5,8 @@
   align-items: center;
   padding: 7pt;
   user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-
 }
+
 .card-user-container > .card-user-image{
   padding: 0;
   border-radius: 50%;
@@ -17,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.8);
-  -moz-box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.8);
-  box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.8);
+  box-shadow: -5px 5px 5px 0 rgb(0 0 0 / 80%);
+  box-shadow: -5px 5px 5px 0 rgb(0 0 0 / 80%);
+  box-shadow: -5px 5px 5px 0 rgb(0 0 0 / 80%);
 }
