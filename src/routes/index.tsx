@@ -7,7 +7,7 @@ export const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/new-account",
+    path: "/create-account",
     element: <CreateNewAccount />,
   },
 ]);
