@@ -27,6 +27,7 @@
   position: absolute;
   top: 0;
   gap: 100px;
+  user-select: none;
 }
 
 .cloud {
@@ -43,6 +44,7 @@
   width: 14.75rem;
   animation: zoom 1s;
   z-index: 1;
+  user-select: none;
 }
 
 .logo img {
@@ -103,6 +105,8 @@
     font-weight: 600;
     box-sizing: border-box;
   }
+}
+
 
 .button-header-primary {
   color: #fff;

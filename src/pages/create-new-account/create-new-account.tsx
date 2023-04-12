@@ -100,6 +100,7 @@ export function CreateNewAccount() {
                     placeholder="Insira sua senha"
                     requiredDecoration
                     value={field.value}
+                    type="password"
                   />
                 )}
               />
@@ -119,6 +120,7 @@ export function CreateNewAccount() {
                     placeholder="Confirme sua senha"
                     requiredDecoration
                     value={field.value}
+                    type="password"
                   />
                 )}
               />
