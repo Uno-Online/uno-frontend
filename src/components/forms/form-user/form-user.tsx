@@ -118,6 +118,7 @@ export function FormUser() {
             Cadastrar-se
           </Link>
         </div>
+
         <div className={styles["area-help"]}>
           <Link to="/forget-password">Esqueci minha senha</Link>
         </div>

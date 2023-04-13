@@ -84,8 +84,7 @@ export function FormGuest() {
           disabled={isSubmitting}
           className={styles["button-form"]}
         >
-          {" "}
-          Entrar{" "}
+          Entrar
         </button>
       </div>
     </form>
