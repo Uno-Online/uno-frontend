@@ -23,6 +23,8 @@ export function ChangeAvatar() {
       localStorage.setItem("cachedDataAvatar", JSON.stringify(response.data));
       if (cachedDataAvatar) {
         setAvatarURl(JSON.parse(cachedDataAvatar));
+      } else {
+        setAvatarURl(response.data);
       }
     } catch (err) {
       if (err instanceof AxiosError && err.response?.data?.message) {
@@ -42,7 +44,11 @@ export function ChangeAvatar() {
     <div className={styles["avatar-container"]}>
       {isLoading ? (
         <img
-          src={cachedDataAvatar ? JSON.parse(cachedDataAvatar)?.url : ""}
+          src={
+            cachedDataAvatar
+              ? JSON.parse(cachedDataAvatar)?.url
+              : avatarUrl?.url
+          }
           alt="avatar"
         />
       ) : (
