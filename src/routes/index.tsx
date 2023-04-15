@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { CreateNewAccount } from "../pages/CreateNewAccount/CreateNewAccount";
-import { Home } from "../pages/Home/home";
+import { CreateNewAccount, Home } from "@/pages";
 
 export const router = createBrowserRouter([
   {
@@ -8,7 +7,7 @@ export const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/new-account",
+    path: "/create-account",
     element: <CreateNewAccount />,
   },
 ]);

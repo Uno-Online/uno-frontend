@@ -1,0 +1,19 @@
+.container-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem
+}
+
+.button-pagination-left, .button-pagination-right{
+    background-color: transparent;
+    border:none;
+}
+
+.button-pagination-right{
+    transform: rotateY(180deg);
+}
+
+.button-pagination-left:disabled, .button-pagination-right:disabled{
+    cursor:not-allowed
+}

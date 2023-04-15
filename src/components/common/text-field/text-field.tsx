@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./TextField.module.css";
+import styles from "./text-field.module.css";
 
-export type TextFieldProps = {
+export interface TextFieldProps {
   error?: boolean;
   helperText?: string;
   id?: string;
@@ -15,7 +15,8 @@ export type TextFieldProps = {
   requiredDecoration?: boolean;
   value?: string | number | readonly string[];
   width?: React.CSSProperties["width"];
-};
+  type?: React.HTMLInputTypeAttribute
+}
 
 export function TextField({
   id = undefined,
@@ -31,6 +32,7 @@ export function TextField({
   requiredDecoration = undefined,
   value = undefined,
   width = "100%",
+  type = undefined
 }: TextFieldProps) {
   return (
     <label
@@ -54,7 +56,7 @@ export function TextField({
         onChange={onChange}
         placeholder={placeholder}
         required={required}
-        type="text"
+        type={type}
         value={value}
       />
 

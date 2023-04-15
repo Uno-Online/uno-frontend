@@ -5,11 +5,18 @@
     "@uno-online/uno-frontend": "0.0.1"
   },
   "changesets": [
+    "afraid-boxes-rhyme",
+    "chilled-cheetahs-matter",
+    "cyan-teachers-visit",
     "dirty-coins-beam",
     "gentle-plants-eat",
+    "kind-islands-develop",
     "kind-plums-compete",
     "long-emus-cross",
+    "mighty-rats-exist",
     "moody-llamas-flow",
-    "wet-items-push"
+    "silly-geese-float",
+    "wet-items-push",
+    "yellow-crabs-tie"
   ]
 }
