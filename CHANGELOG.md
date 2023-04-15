@@ -1,5 +1,21 @@
 # @uno-online/uno-frontend
 
+## 0.1.0-next.4
+
+### Minor Changes
+
+- [#51](https://github.com/Uno-Online/uno-frontend/pull/51) [`d211fba`](https://github.com/Uno-Online/uno-frontend/commit/d211fbac5cafff17ebcf1bcfcbb4d7fdc9a66667) Thanks [@EduNunesGithub](https://github.com/EduNunesGithub)! - add dynamic background component
+
+- [#54](https://github.com/Uno-Online/uno-frontend/pull/54) [`9f39e12`](https://github.com/Uno-Online/uno-frontend/commit/9f39e12cc0629654fcad66f3fb116205202dd8fb) Thanks [@EduNunesGithub](https://github.com/EduNunesGithub)! - add room component
+
+### Patch Changes
+
+- [#59](https://github.com/Uno-Online/uno-frontend/pull/59) [`532eec7`](https://github.com/Uno-Online/uno-frontend/commit/532eec7d819155d0457f38a00a969b8d373842d5) Thanks [@Kaolhou](https://github.com/Kaolhou)! - Criar componente de usuario dentro do jogo#49
+
+- [#57](https://github.com/Uno-Online/uno-frontend/pull/57) [`6a27dcd`](https://github.com/Uno-Online/uno-frontend/commit/6a27dcd4eac5c53e783db195fd070db01605c284) Thanks [@Bruno-mateus](https://github.com/Bruno-mateus)! - .
+
+- [#57](https://github.com/Uno-Online/uno-frontend/pull/57) [`6a27dcd`](https://github.com/Uno-Online/uno-frontend/commit/6a27dcd4eac5c53e783db195fd070db01605c284) Thanks [@Bruno-mateus](https://github.com/Bruno-mateus)! - componente de paginação
+
 ## 0.1.0-next.3
 
 ### Minor Changes
