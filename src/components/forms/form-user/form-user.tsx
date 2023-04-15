@@ -1,21 +1,30 @@
 /* eslint-disable react/jsx-props-no-spreading */
 
-import { useState } from "react";
-import * as z from "zod";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { Cookies } from "react-cookie";
-import { Link } from "react-router-dom";
-import { AxiosError } from "axios";
-import styles from "./form-user.module.css";
 import { api } from "@/api";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { AxiosError } from "axios";
+import { useState } from "react";
+import { Cookies } from "react-cookie";
+import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
+import * as z from "zod";
+import styles from "./form-user.module.css";
+
+
+interface FormProps {
+  setLoginOrGuest: (typeForm: "login" | "guest") => void;
+}
 
 interface LoginProps {
   email: string;
   password: string;
 }
 
-export function FormUser() {
+
+
+
+
+export function FormUser({ setLoginOrGuest }: FormProps) {
   const [serverError, setServerError] = useState<string>("");
 
   const cookies = new Cookies();
@@ -34,6 +43,7 @@ export function FormUser() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm<LoginFormType>({
     resolver: zodResolver(loginFormSchema),
@@ -60,6 +70,23 @@ export function FormUser() {
   return (
     <form className={styles.form} onSubmit={handleSubmit(login)}>
       <div className={styles["content-form"]}>
+
+        <header className={styles["header-form"]}>
+          <button type="button" className={styles["button-header-primary"]}>
+            Entrar
+          </button>
+          <button
+            type="button"
+            className={styles["button-header-secondary"]}
+            onClick={() => {
+              reset();
+              setLoginOrGuest("guest");
+            }}
+          >
+            Convidado
+          </button>
+        </header>
+
         {serverError ?? (
           <small className={styles["form-error"]}>{serverError}</small>
         )}
