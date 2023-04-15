@@ -16,6 +16,7 @@ export function Home() {
 
   return (
     <main className={styles.container}>
+
       <div className={styles.clouds}>
         {clouds.map((cloud) => (
           <img className={styles.cloud} key={`${cloud}`} src={cloud} alt="" />
@@ -25,6 +26,7 @@ export function Home() {
       <div className={styles.logo}>
         <img src={logo} alt="" />
       </div>
+      
       {loginOrGuest === "guest" ? (
         <FormGuest setLoginOrGuest={setLoginOrGuest} />
       ) : (
