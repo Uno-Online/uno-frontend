@@ -1,0 +1,76 @@
+.room {
+  background-color: transparent;
+  display: flex;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 11.25rem;
+}
+
+.room-amount-of-players {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+  border-radius: 0.25rem;
+  padding: 0.3125rem;
+}
+
+.room-amount-of-players img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 1rem;
+  height: auto;
+}
+
+.room-amount-of-players span {
+  color: #000;
+  font-family: Cabin, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 0.9112rem;
+}
+
+.room-amount-of-players-green {
+  background-color: #01a54e;
+}
+
+.room-amount-of-players-red {
+  background-color: #ed1c24;
+}
+
+.room-amount-of-players-yellow {
+  background-color: #f8da27;
+}
+
+.room-title {
+  color: #000;
+  font-family: Cabin, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.215rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.room-user {
+  color: #c4c4cc;
+  font-family: Cabin, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.215rem;
+}
+
+.wrapper {
+  background-color: #fff;
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  width: 100%;
+}
