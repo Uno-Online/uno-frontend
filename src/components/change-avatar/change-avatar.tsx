@@ -11,7 +11,7 @@ interface AvatarProps {
 export function ChangeAvatar() {
   const [avatarUrl, setAvatarURl] = useState<AvatarProps>();
   const [isLoading, setIsloading] = useState<boolean>(false);
-  const [errorAvatar, setErrorAvatar] = useState<string>();
+
   const cachedDataAvatar = localStorage.getItem("cachedDataAvatar");
 
   async function handleAvatar() {
@@ -28,7 +28,8 @@ export function ChangeAvatar() {
       }
     } catch (err) {
       if (err instanceof AxiosError && err.response?.data?.message) {
-        setErrorAvatar(err.response?.data?.message);
+        // eslint-disable-next-line no-alert
+        alert(err.response?.data?.message);
       }
     } finally {
       setIsloading(false);
