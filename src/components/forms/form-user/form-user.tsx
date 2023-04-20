@@ -13,6 +13,7 @@ import styles from "./form-user.module.css";
 import { api } from "@/api";
 import { CardHorizontal } from "@/components/common";
 
+
 interface FormProps {
   setLoginOrGuest: (typeForm: "login" | "guest") => void;
 }
@@ -22,6 +23,8 @@ interface LoginProps {
   password: string;
   checkbox: boolean;
 }
+
+
 
 export function FormUser({ setLoginOrGuest }: FormProps) {
   const [serverError, setServerError] = useState<string>("");
@@ -70,6 +73,7 @@ export function FormUser({ setLoginOrGuest }: FormProps) {
   return (
     <form className={styles.form} onSubmit={handleSubmit(login)}>
       <div className={styles["content-form"]}>
+
         <header className={styles["header-form"]}>
           <button type="button" className={styles["button-header-primary"]}>
             Entrar
@@ -85,6 +89,7 @@ export function FormUser({ setLoginOrGuest }: FormProps) {
             Convidado
           </button>
         </header>
+
         {serverError ?? (
           <small className={styles["form-error"]}>{serverError}</small>
         )}
