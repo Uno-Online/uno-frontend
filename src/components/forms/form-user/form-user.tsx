@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 import { AxiosError } from "axios";
 import styles from "./form-user.module.css";
 import { api } from "@/api";
-import { CardHorizontal } from "@/components/common";
 
 
 interface FormProps {
