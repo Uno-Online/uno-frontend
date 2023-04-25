@@ -1,0 +1,24 @@
+.card-container{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.container-img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 5px 5px 0 rgb(0 0 0 / 80%);
+
+}
+
+.arrow-down{
+    width: 1.3rem;
+    height: 1.3rem;
+    fill-rule: green;
+}
