@@ -19,6 +19,7 @@ module.exports = {
       rules: {
         "no-param-reassign": "warn",
         "import/extensions": "off",
+        "react/jsx-props-no-spreading":"off"
       },
     },
     {

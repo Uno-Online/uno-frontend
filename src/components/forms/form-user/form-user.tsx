@@ -1,16 +1,15 @@
 /* eslint-disable spaced-comment */
 /* eslint-disable no-restricted-globals */
-/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable import/no-extraneous-dependencies */
-import { useState } from "react";
-import * as z from "zod";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { Cookies } from "react-cookie";
-import { Link } from "react-router-dom";
-import { AxiosError } from "axios";
-import styles from "./form-user.module.css";
 import { api } from "@/api";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { AxiosError } from "axios";
+import { useState } from "react";
+import { Cookies } from "react-cookie";
+import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
+import * as z from "zod";
+import styles from "./form-user.module.css";
 
 
 interface FormProps {
@@ -22,8 +21,6 @@ interface LoginProps {
   password: string;
   checkbox: boolean;
 }
-
-
 
 export function FormUser({ setLoginOrGuest }: FormProps) {
   const [serverError, setServerError] = useState<string>("");
