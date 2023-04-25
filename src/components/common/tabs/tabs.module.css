@@ -1,0 +1,59 @@
+.button {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0096dc;
+  font-family: Cabin, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.43rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: none;
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+  overflow: hidden;
+  height: 5.25rem;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #0096dc33;
+}
+
+.button-selected {
+  background-color: #0096dc;
+  color: #fff;
+}
+
+.button-selected:hover {
+  background-color: #0096dc;
+}
+
+.tab-container {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.tabpanel {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+
+.tabpanel-hidden {
+  display: none;
+}
+
+.tabs {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border: 0.625rem solid #fff;
+  border-radius: 0.5rem;
+  box-shadow: -0.375rem 0.375rem 0 0 #000000b3;
+}
