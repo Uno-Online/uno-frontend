@@ -20,7 +20,7 @@ export function FormUser() {
 
   const cookies = new Cookies();
 
-  // schema form
+
   const loginFormSchema = z.object({
     email: z.string().email({ message: "Email inválido" }),
     password: z
@@ -30,7 +30,7 @@ export function FormUser() {
 
   type LoginFormType = z.infer<typeof loginFormSchema>;
 
-  // useForm
+
   const {
     register,
     handleSubmit,
@@ -39,7 +39,7 @@ export function FormUser() {
     resolver: zodResolver(loginFormSchema),
   });
 
-  // get login to rooms
+ 
   async function login({ email, password }: LoginProps) {
     try {
       const response = await api.post("/login", {
@@ -48,8 +48,8 @@ export function FormUser() {
       });
       cookies.set("@unoToken", response.data.token);
       cookies.set("@unoID", response.data.id);
-      // eslint-disable-next-line no-restricted-globals
-      location.href = "/rooms";
+      
+      window.location.href = "/rooms";
     } catch (err) {
       if (err instanceof AxiosError && err.response?.data?.message) {
         setServerError(err.response?.data?.message);

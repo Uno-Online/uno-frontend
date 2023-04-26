@@ -1,7 +1,5 @@
-/* eslint-disable spaced-comment */
-/* eslint-disable no-restricted-globals */
 /* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable import/no-extraneous-dependencies */
+
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -21,7 +19,7 @@ export function FormGuest() {
 
   const cookies = new Cookies();
 
-  //schema form
+  
   const loginFormSechema = z.object({
     name: z.string().min(3, { message: "Nome inválido" }),
     room: z.string().min(4, { message: "Número de sala invaído" }),
@@ -29,7 +27,7 @@ export function FormGuest() {
 
   type LoginFormType = z.infer<typeof loginFormSechema>;
 
-  //useForm
+  
   const {
     register,
     handleSubmit,
@@ -38,14 +36,14 @@ export function FormGuest() {
     resolver: zodResolver(loginFormSechema),
   });
 
-  //get login to rooms
+
   async function login({ name, room }: LogimGuestProps) {
     try {
       const numRoom = Number(room);
       const response = await api.post("/login-guest", { name, numRoom });
       cookies.set("@unoToken", response.data.token);
       cookies.set("@unoID", response.data.id);
-      location.href = "/rooms";
+      window.location.href = "/rooms";
     } catch (err) {
       if (err instanceof AxiosError && err.response?.data?.message) {
         setServerError(err.response?.data?.message);
