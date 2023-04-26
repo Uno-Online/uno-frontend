@@ -1,0 +1,60 @@
+.avatar-container {
+    height: 16.31rem;
+    width: 14.87rem;
+    position: relative;
+    margin: auto;
+    border-radius: 50%;
+    animation:fade-in 350ms ease-in;
+}
+
+.avatar-container > img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+      box-shadow: -4px 4px 0 rgb(0 0 0 / 70%);
+
+}
+
+.button-change {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 4rem;
+    width: 4rem;
+    box-shadow: -4px 4px 0 rgb(0 0 0 / 70%);
+    position: absolute;
+    left: -15px;
+    bottom: 8px;
+}
+
+.button-change:disabled{
+    cursor: not-allowed;
+}
+
+.button-change img {
+    width: 2rem;
+    object-fit: cover;
+}
+
+.spin{
+      animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
